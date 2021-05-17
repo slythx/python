@@ -15,6 +15,7 @@ users = sys.argv[1]
 with open(users, 'r') as file:
 	name = file.read()
 name = name.split('\n')
+name.remove('')
 
 all_users = []
 
